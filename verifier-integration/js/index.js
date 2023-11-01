@@ -23,6 +23,7 @@ app.listen(port, () => {
 
 // Create a map to store the auth requests and their session IDs
 const requestMap = new Map();
+let authResponse;
 
 		// GetQR returns auth request
 		async function GetAuthRequest(req,res) {
